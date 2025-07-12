@@ -31,6 +31,7 @@ class Settings(BaseSettings):
         "http://localhost:5173",  # Vite default
         "http://127.0.0.1:3000",
         "http://127.0.0.1:5173",
+        "http://ruh-fe.s3-website-us-east-1.amazonaws.com"  # Production S3 website
     ]
 
     @validator("BACKEND_CORS_ORIGINS", pre=True)
